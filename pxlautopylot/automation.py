@@ -24,6 +24,5 @@ class Automation:
         target_achieved = self.pixel.is_same_color(self.color) and self.target_color
         default_missing = not self.pixel.is_same_color(self.color) and not self.target_color
         if target_achieved or default_missing:
-            pilotable.log("matching condition")
             for action in self.actions:
                 action.execute(pilotable)
