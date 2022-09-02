@@ -2,7 +2,7 @@
 
 Autopilot your Windows inputs by monitoring pixels on your screen.
 
-This tools allows you to automate your actions with no code but a configuration file following this sample :
+This tool allows you to automate your actions with no code but a configuration file following this sample :
 ```json
 {
   "window_name": "Window name",
@@ -31,7 +31,7 @@ This tools allows you to automate your actions with no code but a configuration 
 ```
 ## Autopilot
 
-| key | type/values | description |
+| key | type | description |
 | --- | ----------- | ------ |
 | window_name | `string` | Window name to target.
 | description | `string` | Description regarding your goal. Does nothing.
@@ -40,7 +40,7 @@ This tools allows you to automate your actions with no code but a configuration 
 
 ## Automation
 
-| key | type/values | description |
+| key | type | description |
 | --- | ----------- | ------ |
 | pixel | `Pixel` | Pixel you want to monitor.
 | pixel.x | `int` | X (horizontal) coordinate of your pixel.
@@ -54,7 +54,7 @@ This tools allows you to automate your actions with no code but a configuration 
 
 ## Action 
 
-| key | type/values | description |
+| key | type | description |
 | --- | ----------- | ------ |
 | action_type | `Enum<ActionType>` | Action your want to execute.<br>`key` : Press & release a key.<br>`key_press` : Press a key.<br>`key_release` : Release a key.<br>`click` : Click and release the left mouse button.<br>`click_press` : Click the left mouse button.<br>`click_release` : Release the left mouse button.<br>`move` : Move the mouse.<br>`stop` : Stop the autopilot. To be use as a stop condition. |
 | args | `{}` | Given args to your action.
