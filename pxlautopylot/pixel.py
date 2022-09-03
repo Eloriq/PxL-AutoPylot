@@ -22,4 +22,4 @@ class Pixel:
         return self.get_color().equals(color)
 
     def __str__(self):
-        return "{{ 'x': {0}, 'y': {1} }}".format(self.x, self.y)
+        return "{{ 'x': {0}, 'y': {1}, 'color': {2} }}".format(self.x, self.y, self.get_color())
