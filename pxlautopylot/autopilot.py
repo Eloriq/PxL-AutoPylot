@@ -1,3 +1,6 @@
+from random import randint
+from time import sleep
+
 from pywinauto import findwindows, application
 from pywinauto.findbestmatch import MatchError
 from pxlautopylot.automation import Automation
@@ -39,5 +42,6 @@ class Autopilot(Pilotable):
                 w_dialog.set_focus()
                 for automation in self.automations:
                     automation.run(self)
+                sleep(randint(218, 423) / 1000)
         except MatchError:
             print("Could not find window {0}".format(self.window_name))
