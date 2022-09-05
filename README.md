@@ -29,7 +29,10 @@ This tool allows you to automate your actions with no code but a configuration f
   ]
 }
 ```
-## Autopilot
+
+## Datamodel
+
+### Autopilot
 
 | key | type | description |
 | --- | ----------- | ------ |
@@ -38,7 +41,7 @@ This tool allows you to automate your actions with no code but a configuration f
 | debug | `boolean` | Whether you want to print debugging information.
 | automations | `Array<Automation>` | List of your automations. See `Automation` below.
 
-## Automation
+### Automation
 
 | key | type | description |
 | --- | ----------- | ------ |
@@ -52,7 +55,7 @@ This tool allows you to automate your actions with no code but a configuration f
 | target_color | `boolean` | `true` if you want your actions to be triggered when the pixel meets the given color.<br>`false` if you want your actions to be triggered when the pixel is different from the given color.
 | actions | `Array<Action>` | List of your actions. See `Action` below. 
 
-## Action 
+### Action 
 
 | key | type | description |
 | --- | ----------- | ------ |
@@ -62,3 +65,14 @@ This tool allows you to automate your actions with no code but a configuration f
 | args.x | `int` | X (horizontal) coordinate argument. **Only for mouse actions.**
 | args.y | `int` | Y (vertical) coordinate argument. **Only for mouse actions.**
 | args.message | `string` | Message argument. **Only for stop action.**
+
+## Installation
+
+Install dependencies : `pip install -r ./requirements.txt` or `python -m pip install -r ./requirements.txt` if `pip` is not globally installed.
+
+## Dependencies
+
+- [keyboard](https://github.com/boppreh/keyboard) : Control of your keyboard.
+- [pynput](https://github.com/moses-palmer/pynput) : Control and monitor input devices.
+- [pywin32](https://github.com/mhammond/pywin32) : Access to many of the Windows APIs from Python.
+- [pywinauto](https://github.com/pywinauto/pywinauto) : Automate the Microsoft Windows GUI.
